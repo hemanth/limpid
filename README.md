@@ -1,5 +1,5 @@
 ## About Limpid
-Limpid is a simple gtk application coded in python, as there was a rquirement for the course named [Scripting-101]() which i'm mentoring on Mozilla P2PU.
+Limpid is a simple gtk application coded in python, as there was a requirment for the course named [Scripting-101]() which i'm mentoring on Mozilla P2PU.
 The app has a window with a split screen, where in the first part of the split is a simple webbased IRC and the other part is a virtual GNU/Linux terminal.
 
 #Advantages :
