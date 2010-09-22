@@ -33,7 +33,7 @@ class Limpid:
         ''' Create the main gtk Window, with title as Code with me '''
         window = gtk.Window()
         ''' Set request, later maximize '''
-        window.set_size_request(600,400)
+        window.set_size_request(1024,768)
         window.set_title("Limpid")
         
         ''' Webit.Webview to load the irc page
