@@ -18,4 +18,4 @@ The app has is a window with a split scree, where in the first part of the split
 Get the dependencies if on a Debian based system by typing the below, or else get the source and compile :
 		sudo apt-get install python-get python-vte python-webkit
 
-
+!http://imgur.com/WBOm8.png!
