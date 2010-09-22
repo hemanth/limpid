@@ -13,7 +13,7 @@ The app has is a window with a split scree, where in the first part of the split
 
 1. python-gtk
 2. vte 
-3  webkit
+3. webkit
 
 Get the dependencies if on a Debian based system by typing the below, or else get the source and compile :
 		sudo apt-get install python-get python-vte python-webkit
