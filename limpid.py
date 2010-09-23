@@ -71,8 +71,12 @@ class Limpid:
         window = gtk.Window()
         ''' Set request, later maximize '''
         window.set_size_request(1024,768)
+        ''' Set title for the main window '''
         window.set_title("Limpid")
+        ''' Set window border with thickness 5 '''
         window.set_border_width(5)
+        ''' Set window icon, visible when window is minimized '''
+        window.set_icon_from_file('icon.png')
         
         ''' Policy for auto shrink of window to be False, or else child will override window borders '''
         window.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC,False)
