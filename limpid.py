@@ -30,12 +30,7 @@ class Limpid:
         vt.connect ("child-exited", lambda term: gtk.main_quit())
         vt.fork_command()
         
-        ''' Create the main gtk Window, with title as Code with me '''
-        window = gtk.Window()
-        ''' Set request, later maximize '''
-        window.set_size_request(1024,768)
-        window.set_title("Limpid")
-        
+       
         ''' Webit.Webview to load the irc page
             Yes i know gtkmozembed, but that just an overhead in this case! 
             TODO : load_progress signal handler '''
@@ -60,7 +55,7 @@ class Limpid:
         chat = gtk.VBox(False,5)
         chat.pack_start(irc)
         chat.show()
-       
+
         '''
         Add vt/chat to scroll window if required
         scroll = gtk.ScrolledWindow()
@@ -71,14 +66,25 @@ class Limpid:
         vp.show()
         vp.add2(vtBox)
         vp.show()
-   
+        
+        ''' Create the main gtk Window, with title as Code with me '''
+        window = gtk.Window()
+        ''' Set request, later maximize '''
+        window.set_size_request(1024,768)
+        window.set_title("Limpid")
+        window.set_border_width(5)
+        
+        ''' Policy for auto shrink of window to be False, or else child will override window borders '''
+        window.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC,False)
+        
         ''' Add Vpanel to the main window and show_all '''
         window.add(vp)
-        
+       
+
         ''' Connect window to gtk.main_quit(), a delete-event '''
         window.connect('destroy',self.destroy)
         window.show_all()
-        
+
         ''' In case you turns to resize the window, by unmaximizing '''
         window.connection_id = window.connect('size-request', self.resize)
         window.maximize()
