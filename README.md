@@ -22,4 +22,7 @@ Get the dependencies if on a Debian based system by typing the below, or else ge
 ## After the above, you may run the code by :
 		git clone git://github.com/hemanth/limpid.git
 		cd limpid
-		python limpid.py 
+		python limpid.py
+
+## Video demo
+        http://fasdf.net/upload/limpid.ogg
